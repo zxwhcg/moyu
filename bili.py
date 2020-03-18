@@ -6,6 +6,20 @@ url = 'https://oapi.dingtalk.com/robot/send?access_token=dfb282779fa574887abaade
 # 半佛，朱一旦，大骚,罗翔说刑法,毕导THU,何同学
 bili_ids = ['37663924','437316738','390461123','517327498','254463269','163637592']
 yesterday = time.time()-60*60*24*1  # 1天前
+
+obj = {
+    "msgtype": "text", 
+    "text": {
+        "content": 'B站:'+time.strftime('%Y-%m-%d',time.localtime(time.time())), 
+    }
+}
+requests.post(url,
+    headers={'Content-Type': 'application/json'},
+    data=json.dumps(obj)
+)
+
+
+
 for bid in bili_ids:
     bili_url = 'https://api.bilibili.com/x/space/arc/search?mid='+bid+'&pn=1&ps=25&jsonp=jsonp'
 
