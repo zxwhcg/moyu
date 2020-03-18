@@ -27,5 +27,5 @@ jobs:
         pip install -r requirements.txt
     - name: run task
       run: |
-        python start.py
+        python bili.py
       
