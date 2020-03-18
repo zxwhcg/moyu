@@ -7,7 +7,7 @@ requests.post(url,
     headers={'Content-Type': 'application/json'},
     data=json.dumps({"msgtype": "text",
         "text": {
-             "content": "消息,我是python1"
+             "content": "消息,我是python12"
         }
       })
 )
