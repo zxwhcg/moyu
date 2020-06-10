@@ -2,7 +2,7 @@ import requests
 import json
 import time
 
-url = 'https://oapi.dingtalk.com/robot/send?access_token=dfb282779fa574887abaade18616db9be415fcc4b11289a6bd487a59f2b5a641'
+url = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=3e87df78-4193-4fdd-bdaa-a1b3229a1605'
 # 半佛，朱一旦，大骚,罗翔说刑法,毕导THU,何同学
 bili_ids = ['37663924','437316738','390461123','517327498','254463269','163637592']
 yesterday = time.time()-60*60*24*2  # 1天前
